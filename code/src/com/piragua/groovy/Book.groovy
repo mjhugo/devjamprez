@@ -4,7 +4,10 @@ class Book {
     String title
     String authorName
     Integer numberOfPages
+    String subTitle
     List chapters
+    Date publishDate
+    String publisher
 
     String toString() {
         title?.toUpperCase()

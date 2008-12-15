@@ -3,6 +3,7 @@ package com.piragua.java;
 import junit.framework.TestCase;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class BookTest extends TestCase {
     Book book;
@@ -13,6 +14,9 @@ public class BookTest extends TestCase {
         book.setNumberOfPages(300);
         book.setAuthorName("Mike Hugo");
         book.setTitle("Groovy Jam");
+        book.setSubTitle("Jammin' with Groovy");
+        book.setPublisher("Piragua Press");
+        book.setPublishDate(new Date());
 
         chapter = new Chapter("Grails");
         ArrayList chapters = new ArrayList();

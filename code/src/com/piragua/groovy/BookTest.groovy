@@ -5,8 +5,9 @@ public class BookTest extends GroovyTestCase {
     Chapter grails, groovy, why
 
     void setUp() {
-        book = new Book(title: "Groovy Jam",
-                authorName: "Mike Hugo", numberOfPages: 300)
+        book = new Book(title: "Groovy Jam", subTitle:"Jammin",
+                authorName: "Mike Hugo", numberOfPages: 300,
+                publishDate:new Date(), publisher: "Piragua Press")
         grails = new Chapter(title: 'Grails')
         groovy = new Chapter(title: 'Groovy')
         why = new Chapter(title: 'Why should I care?')
